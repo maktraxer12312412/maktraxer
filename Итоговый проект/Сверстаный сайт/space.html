@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья – мой космос</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="img/logo-dark.svg" alt="Моя семья – мой космос" class="logo-img">
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="registration.html" class="nav-link">Регистрация</a></li>
+                        <li class="nav-item"><a href="#auth" class="nav-link">Авторизация</a></li>
+                        <li class="nav-item"><a href="account.html" class="nav-link">Личный кабинет</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="#competitions" class="nav-link">Конкурсы</a></li>
+                        <li class="nav-item"><a href="#search" class="nav-link">Поиск</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="theme-toggle">
+                    <button id="themeSwitcher" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Откройте космос вместе с семьей</h1>
+                <p class="hero-text">Уникальные конкурсы и мероприятия для всей семьи</p>
+                <a href="#competitions" class="btn btn-primary">Участвовать</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные конкурсы (слайдер) -->
+    <section class="popular-competitions">
+        <div class="container">
+            <h2 class="section-title">Популярные конкурсы</h2>
+
+            <div class="slider">
+                <div class="slider-track">
+                    <!-- Слайд 1 -->
+                    <div class="slide active">
+                        <div class="slide-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=5a1e98a3f4139f26b05b98062789558d_l-5518637-images-thumbs&n=13" alt="Космический арт">
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Космический арт</h3>
+                            <p class="slide-description">Создайте художественное произведение на космическую тему всей семьей</p>
+                            <div class="slide-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-value">4.7/5</span>
+                            </div>
+                            <a href="competition.html" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 2 -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="https://avatars.mds.yandex.net/get-mpic/5351166/2a00000191c848277b4f2768da0fe63a0610/orig" alt="Модель ракеты">
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Модель ракеты</h3>
+                            <p class="slide-description">Соревнование по созданию лучшей модели космической ракеты</p>
+                            <div class="slide-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">4.2/5</span>
+                            </div>
+                            <a href="competition.html" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 3 -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/017/488/273/large/albin-merle-render-0000.jpg?1556183736" alt="Космический костюм">
+                        </div>
+                        <div class="slide-content">
+                            <h3 class="slide-title">Космический костюм</h3>
+                            <p class="slide-description">Конкурс на лучший космический костюм для всей семьи</p>
+                            <div class="slide-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-value">5/5</span>
+                            </div>
+                            <a href="competition.html" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция авторизации -->
+    <section id="auth" class="auth-section">
+        <div class="container">
+            <h2 class="section-title">Авторизация</h2>
+
+            <div class="auth-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                        <a href="#" class="forgot-password">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О нас</h2>
+                    <p>Мы - команда энтузиастов, которые верят, что космос может объединить семьи. Наши мероприятия созданы для того, чтобы дети и родители могли вместе познавать тайны вселенной, развивать творческие способности и укреплять семейные узы.</p>
+                    <p>С 2010 года мы проводим уникальные космические конкурсы и фестивали, которые уже посетили более 10 000 семей по всей стране.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://cdn.culture.ru/images/1927a999-0af1-56d8-8783-27b0fbfe7536" alt="Наша команда">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competitions" class="competitions-section">
+        <div class="container">
+            <h2 class="section-title">Конкурсы</h2>
+
+            <div class="competitions-grid">
+                <!-- Карточка 1 -->
+                <div class="competition-card">
+                    <div class="card-image">
+                        <img src="https://sh146-mospino-r897.gosweb.gosuslugi.ru/netcat_files/generated/109/176/760x570/242/8ef1b78ef551488a260b0753c523292c.jpg?crop=0%3A0%3A0%3A0&hash=d03ce572e2fd465208543878eb774fd0&resize_mode=0&wm_m=0" alt="Космическая викторина">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Космическая викторина</h3>
+                        <p class="card-description">Проверьте свои знания о космосе в увлекательной викторине для всей семьи</p>
+                        <div class="card-meta">
+                            <span class="participants"><i class="fas fa-users"></i> 124 участника</span>
+                            <span class="rating">4.5 <i class="fas fa-star"></i></span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Участвовать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="competition-card">
+                    <div class="card-image">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/04aea99f-0fed-4276-8b64-b15c67eb0764/1920x" alt="История пришельца">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">История пришельца</h3>
+                        <p class="card-description">Придумайте и расскажите историю о приключениях инопланетянина на Земле</p>
+                        <div class="card-meta">
+                            <span class="participants"><i class="fas fa-users"></i> 87 участников</span>
+                            <span class="rating">4.2 <i class="fas fa-star"></i></span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Участвовать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="competition-card">
+                    <div class="card-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=032ad7c6eac6f2fcd5f40b58070383c1_l-4728599-images-thumbs&n=13" alt="Космический эксперимент">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Космический эксперимент</h3>
+                        <p class="card-description">Проведите простой научный эксперимент на космическую тему</p>
+                        <div class="card-meta">
+                            <span class="participants"><i class="fas fa-users"></i> 156 участников</span>
+                            <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Участвовать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="competition-card">
+                    <div class="card-image">
+                        <img src="https://img2.cgtrader.com/items/857328/6b812a759a/planet-set-3d-model-low-poly-max.jpg" alt="Модель планеты">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Модель планеты</h3>
+                        <p class="card-description">Создайте модель планеты Солнечной системы или придумайте свою</p>
+                        <div class="card-meta">
+                            <span class="participants"><i class="fas fa-users"></i> 92 участника</span>
+                            <span class="rating">4.3 <i class="fas fa-star"></i></span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Участвовать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="competition-card">
+                    <div class="card-image">
+                        <img src="https://stihi.ru/pics/2022/08/15/4845.jpg" alt="Космическая песня">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Космическая песня</h3>
+                        <p class="card-description">Сочините и исполните песню о космосе, звездах или межпланетных путешествиях</p>
+                        <div class="card-meta">
+                            <span class="participants"><i class="fas fa-users"></i> 67 участников</span>
+                            <span class="rating">4.0 <i class="fas fa-star"></i></span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Участвовать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="container">
+            <h2 class="section-title">Поиск конкурсов</h2>
+
+            <div class="search-form">
+                <form action="#" method="get">
+                    <div class="search-group">
+                        <input type="text" placeholder="Введите название или описание конкурса..." list="competitions-list">
+                        <datalist id="competitions-list">
+                            <option value="Космический арт">
+                            <option value="Модель ракеты">
+                            <option value="Космический костюм">
+                            <option value="Космическая викторина">
+                            <option value="История пришельца">
+                            <option value="Космический эксперимент">
+                            <option value="Модель планеты">
+                            <option value="Космическая песня">
+                        </datalist>
+                        <button type="submit" class="btn btn-primary">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+
+            <div class="reviews-slider">
+                <div class="reviews-track">                    <!-- Отзыв 1 -->
+                    <div class="review active">
+                        <div class="review-author">
+                            <img src="https://sun9-8.userapi.com/s/v1/ig2/Wnn2q9ETmXy-yI68DDIVpsrzF7pCk791qCndHk0cS8Xt1jJ-V--1S_08Qd5OSH1qbcDdE8P2vAK4FO0ZLxwidiVM.jpg?size=400x400&quality=95&crop=40,352,696,696&ava=1" alt="Иван Петров" class="author-photo">
+                            <div class="author-info">
+                                <h4 class="author-name">Иван Петров</h4>
+                                <span class="review-date">15.05.2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>Участвовали с детьми в конкурсе "Модель ракеты". Получили массу удовольствия и узнали много нового о космических технологиях. Организация на высшем уровне!</p>
+                            <a href="competition.html" class="review-link">Читать о конкурсе</a>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-author">
+                            <img src="https://vkplay.ru/pre_0x736_resize/hotbox/content_files/article/2021/01/27/b4ba922982214de7926fb5f1ee706e6a.jpg?quality=85" alt="Елена Смирнова" class="author-photo">
+                            <div class="author-info">
+                                <h4 class="author-name">Елена Смирнова</h4>
+                                <span class="review-date">22.04.2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Космический костюм" - это было невероятно! Дочь придумала костюм кометы, а мы с мужем были её "спутниками". Смеялись и творили всей семьёй. Спасибо за такие идеи!</p>
+                            <a href="competition.html" class="review-link">Читать о конкурсе</a>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-author">
+                            <img src="https://avatars.mds.yandex.net/i?id=72820c0ca7a1e416488740b72d028c05_sr-5232622-images-thumbs&n=13" alt="Алексей Козлов" class="author-photo">
+                            <div class="author-info">
+                                <h4 class="author-name">Алексей Козлов</h4>
+                                <span class="review-date">10.03.2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>Уже третий год участвуем в ваших мероприятиях. Каждый раз - новые впечатления и знания. Особенно понравилась викторина - вопросы были интересные и для детей, и для взрослых.</p>
+                            <a href="competition.html" class="review-link">Читать о конкурсе</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-controls">
+                    <button class="reviews-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="reviews-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-form">
+                <h3 class="form-title">Подпишитесь на новости</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="contacts-list">
+                        <li><a href="tel:+74842234567" class="contact-link"><i class="fas fa-phone"></i> +7 (4842) 23-45-67</a></li>
+                        <li><a href="mailto:family@cosmos.ru" class="contact-link"><i class="fas fa-envelope"></i> family@cosmos.ru</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#" class="footer-nav-link">Главная</a></li>
+                        <li><a href="#" class="footer-nav-link">Главная-светлая</a></li>
+                        <li><a href="#" class="footer-nav-link">Регистрация</a></li>
+                        <li><a href="#" class="footer-nav-link">Конкурс</a></li>
+                        <li><a href="#" class="footer-nav-link">Личный кабинет</a></li>
+                        <li><a href="#" class="footer-nav-link">Страница не найдена</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-title">Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 "Моя семья – мой космос". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

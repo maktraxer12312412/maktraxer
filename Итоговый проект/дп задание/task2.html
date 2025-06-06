@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-комплект</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>UI-комплект</h1>
+
+        <!-- Текстовое поле -->
+        <label for="text-input">Текстовое поле:</label>
+        <input type="text" id="text-input" placeholder="Введите текст">
+
+        <!-- Кнопка -->
+        <button type="button">Нажми меня</button>
+
+        <!-- Выпадающий список -->
+        <label for="dropdown">Выпадающий список:</label>
+        <select id="dropdown">
+            <option value="option1">Опция 1</option>
+            <option value="option2">Опция 2</option>
+            <option value="option3">Опция 3</option>
+        </select>
+
+        <!-- Чекбокс -->
+        <label>
+            <input type="checkbox" id="checkbox"> Чекбокс
+        </label>
+
+        <!-- Радиокнопка -->
+        <fieldset>
+            <legend>Выберите опцию:</legend>
+            <label>
+                <input type="radio" name="radio-group" value="radio1"> Радиокнопка 1
+            </label>
+            <label>
+                <input type="radio" name="radio-group" value="radio2"> Радиокнопка 2
+            </label>
+        </fieldset>
+
+        <!-- Метка с чекбоксом -->
+        <label>
+            <input type="checkbox" id="labeled-checkbox"> Метка с чекбоксом
+        </label>
+
+        <!-- Метка с радиокнопкой -->
+        <fieldset>
+            <legend>Метка с радиокнопкой:</legend>
+            <label>
+                <input type="radio" name="labeled-radio-group" value="labeled-radio1"> Метка с радиокнопкой 1
+            </label>
+            <label>
+                <input type="radio" name="labeled-radio-group" value="labeled-radio2"> Метка с радиокнопкой 2
+            </label>
+        </fieldset>
+
+        <!-- Выпадающий календарь ввода -->
+        <label for="date-input">Выберите дату:</label>
+        <input type="date" id="date-input">
+
+        <!-- Диапазон -->
+        <label for="range">Диапазон:</label>
+        <input type="range" id="range" min="0" max="100" value="50">
+
+        <!-- Прогресс-бар -->
+        <label for="progress-bar">Прогресс-бар:</label>
+        <progress id="progress-bar" value="70" max="100"></progress>
+    </div>
+
+</body>
+</html>

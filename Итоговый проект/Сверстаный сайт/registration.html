@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Моя семья – мой космос</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="img/logo-dark.svg" alt="Моя семья – мой космос" class="logo-img">
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="registration.html" class="nav-link active">Регистрация</a></li>
+                        <li class="nav-item"><a href="index.html#auth" class="nav-link">Авторизация</a></li>
+                        <li class="nav-item"><a href="account.html" class="nav-link">Личный кабинет</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="index.html#competitions" class="nav-link">Конкурсы</a></li>
+                        <li class="nav-item"><a href="index.html#search" class="nav-link">Поиск</a></li>
+                        <li class="nav-item"><a href="index.html#footer" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="theme-toggle">
+                    <button id="themeSwitcher" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="registration-main">
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-container">
+                    <div class="registration-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=5a1e98a3f4139f26b05b98062789558d_l-5518637-images-thumbs&n=13" alt="Космическая семья">
+                    </div>
+                    
+                    <div class="registration-form">
+                        <h2 class="section-title">Регистрация</h2>
+                        <p class="form-subtitle">Присоединяйтесь к нашему космическому сообществу</p>
+                        
+                        <form action="#" method="post" id="registrationForm">
+                            <div class="form-group">
+                                <label for="reg-email">Email*</label>
+                                <input type="email" id="reg-email" name="email" required>
+                                <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-password">Пароль*</label>
+                                <input type="password" id="reg-password" name="password" required>
+                                <span class="input-icon"><i class="fas fa-lock"></i></span>
+                                <div class="password-strength">
+                                    <span class="strength-bar"></span>
+                                    <span class="strength-bar"></span>
+                                    <span class="strength-bar"></span>
+                                    <span class="strength-text">Сложность пароля: слабый</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-confirm-password">Подтвердите пароль*</label>
+                                <input type="password" id="reg-confirm-password" name="confirm-password" required>
+                                <span class="input-icon"><i class="fas fa-lock"></i></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-name">Имя*</label>
+                                <input type="text" id="reg-name" name="name" required>
+                                <span class="input-icon"><i class="fas fa-user"></i></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-surname">Фамилия</label>
+                                <input type="text" id="reg-surname" name="surname">
+                                <span class="input-icon"><i class="fas fa-user"></i></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-phone">Телефон</label>
+                                <input type="tel" id="reg-phone" name="phone" placeholder="+7 (___) ___-__-__">
+                                <span class="input-icon"><i class="fas fa-phone"></i></span>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="reg-agreement" name="agreement" required>
+                                <label for="reg-agreement">Я согласен(а) с <a href="#" class="link">правилами обработки персональных данных</a> и <a href="#" class="link">пользовательским соглашением</a></label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="reg-newsletter" name="newsletter" checked>
+                                <label for="reg-newsletter">Я хочу получать новости о конкурсах и мероприятиях</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
+                            
+                            <div class="form-footer">
+                                <p>Уже есть аккаунт? <a href="index.html#auth" class="link">Войти</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="contacts-list">
+                        <li><a href="tel:+74842234567" class="contact-link"><i class="fas fa-phone"></i> +7 (4842) 23-45-67</a></li>
+                        <li><a href="mailto:family@cosmos.ru" class="contact-link"><i class="fas fa-envelope"></i> family@cosmos.ru</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html" class="footer-nav-link">Главная</a></li>
+                        <li><a href="registration.html" class="footer-nav-link active">Регистрация</a></li>
+                        <li><a href="account.html" class="footer-nav-link">Личный кабинет</a></li>
+                        <li><a href="index.html#about" class="footer-nav-link">О нас</a></li>
+                        <li><a href="index.html#competitions" class="footer-nav-link">Конкурсы</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-title">Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 "Моя семья – мой космос". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+    <script>
+        // Скрипт для валидации формы регистрации
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Проверка паролей на совпадение
+            const password = document.getElementById('reg-password').value;
+            const confirmPassword = document.getElementById('reg-confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Пароли не совпадают!');
+                return;
+            }
+            
+            // Проверка сложности пароля
+            if (password.length < 8) {
+                alert('Пароль должен содержать минимум 8 символов!');
+                return;
+            }
+            
+            // Если все проверки пройдены, можно отправить форму
+            alert('Регистрация прошла успешно!');
+            // Здесь обычно отправка формы на сервер
+            // this.submit();
+        });
+        
+        // Индикатор сложности пароля
+        document.getElementById('reg-password').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBars = document.querySelectorAll('.strength-bar');
+            const strengthText = document.querySelector('.strength-text');
+            
+            // Сброс индикатора
+            strengthBars.forEach(bar => bar.style.backgroundColor = '#ddd');
+            
+            let strength = 0;
+            
+            // Проверка длины
+            if (password.length >= 8) strength++;
+            if (password.length >= 12) strength++;
+            
+            // Проверка на наличие цифр
+            if (/\d/.test(password)) strength++;
+            
+            // Проверка на наличие специальных символов
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) strength++;
+            
+            // Обновление индикатора
+            for (let i = 0; i < strength; i++) {
+                if (i < 2) {
+                    strengthBars[i].style.backgroundColor = '#ff4d4d'; // Красный
+                } else if (i < 4) {
+                    strengthBars[i].style.backgroundColor = '#ffcc00'; // Желтый
+                } else {
+                    strengthBars[i].style.backgroundColor = '#4CAF50'; // Зеленый
+                }
+            }
+            
+            // Обновление текста
+            if (strength <= 2) {
+                strengthText.textContent = 'Сложность пароля: слабый';
+            } else if (strength <= 4) {
+                strengthText.textContent = 'Сложность пароля: средний';
+            } else {
+                strengthText.textContent = 'Сложность пароля: сильный';
+            }
+        });
+        
+        // Маска для телефона
+        document.getElementById('reg-phone').addEventListener('input', function(e) {
+            let x = this.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+            this.value = !x[2] ? x[1] : '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+        });
+    </script>
+</body>
+</html>
